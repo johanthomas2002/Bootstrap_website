@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketHolic</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfYOgirkdxUKLoIQZ6xCNMG25lbqNCsiHTw&s">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1 me-auto" href="#">Cricket_Holic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-5 me-5 w-75 d-flex justify-content-evenly fs-5">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#batting">Batting Gears</a></li>
+                    <li><a class="dropdown-item" href="#keeping">Wicket Keeping Gears</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#essentials">Other Essentials</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner_carousel -->
+    <div id="carouselExampleInterval" class="carousel slide mt-1" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="https://www.deluxsports.com/media/wysiwyg/Main-david-Warner-Banner.jpg" height="630px" class="d-block w-100" alt="B1">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/GT_Banner_Live_Now.jpg?v=1714984881" class="d-block w-100" alt="B2">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/LSG_Banner_Live_Now.jpg?v=1714984902" class="d-block w-100" alt="B3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="main">
+        <!-- content -->
+        <div class="row m-5 pt-4 ps-5 pe-5 d-flex align-items-center" id="batting">
+            <h2 class="text-center mb-3">Batting Gears</h2>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/03/d7/8f/03d78f0725f75f0550ada3e9719ac2fb.jpg" width="200px" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Bats</h5>
+                        <p class="card-text">A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/c5/ab/37/c5ab37014f86621da4e2242f9d37f248.jpg" width="200px" height="300px" class="card-img-top" alt="Gloves">
+                    <div class="card-body">
+                        <h5 class="card-title">Batting Glove</h5>
+                        <p class="card-text">Batting gloves are crucial for batsmen. They help in absorbing sweat and thus avoid slipping.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://rukminim2.flixcart.com/image/750/900/xif0q/pad/b/u/o/pad-308-men-s-39-43-cm-na-batting-pad-sag-original-imagjqyrbecyhs4a.jpeg?q=20&crop=false" width="200px" height="300px" class="card-img-top" alt="pads">
+                    <div class="card-body">
+                        <h5 class="card-title">Batting Pad</h5>
+                        <p class="card-text">One of a pair of soft padded coverings that protect the legs of the person batting.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/66/d4/19/66d419ab96061abc055b46487a1e86a6.jpg" width="200px" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Helmets</h5>
+                        <p class="card-text">A cricket helmet is a piece of protective equipment you wear on your head.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content2 -->
+        <div class="row m-5 pt-4 ps-5 pe-5 d-flex align-items-center" id="keeping">
+            <h2 class="text-center mb-3">Wicket Keeping Gears</h2>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/357807973/YK/JR/OI/2100883/sm-le-cricket-wicket-keeping-gloves-500x500.jpg" width="200px" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Keeping gloves</h5>
+                        <p class="card-text">A wicket keeping glove has a palm lining. It is the area above the palm of the hand and used to catch the ball.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://www.neoncricket.co.uk/cdn/shop/files/20230713_111940_dcaa56a8-db3a-4c3d-aa9c-95d1820b7731.jpg?v=1704021319&width=1946" width="200px" height="300px" class="card-img-top" alt="Gloves">
+                    <div class="card-body">
+                        <h5 class="card-title">Keeping pad</h5>
+                        <p class="card-text">As a wicket keeper, it's essential to have the right equipment, and wicket keeping pads are no exception. </p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/l3ahpjk0/sport-glove/j/g/t/na-men-inner-gloves-for-wicket-kipping-inner-gloves-for-wicket-original-imagefvzgc3zgumz.jpeg?q=90" width="200px" height="300px" class="card-img-top" alt="pads">
+                    <div class="card-body">
+                        <h5 class="card-title">Keeping Inner-gloves</h5>
+                        <p class="card-text">For playing cricket in the sun, you need a decent pair of inners to keep your hands in tip top condition.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/1280x1280/products/4332/12655/arm-sleeve-compression-black_3__43539.1676111028.jpg?c=1" width="200px" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleevs</h5>
+                        <p class="card-text"> Supports muscles and joints, reducing the risk of strains and sprains.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content3 -->
+        <div class="row m-5 pt-4 ps-5 pe-5 d-flex align-items-center" id="essentials">
+            <h2 class="text-center mb-3">Other Essentials</h2>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://images.pond5.com/spinning-cricket-balls-close-sport-footage-125695288_iconl.jpeg" width="200px" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Balls</h5>
+                        <p class="card-text">A cricket ball consists of a cork core wound with string then a leather cover stitched on.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/320285155/WN/RP/YE/60724591/cricket-stump.jpg" width="200px" height="300px" class="card-img-top" alt="Gloves">
+                    <div class="card-body">
+                        <h5 class="card-title">Stumps</h5>
+                        <p class="card-text">In cricket, the stumps are the three vertical posts that support the bails and form the wicket.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://webassets.cyranecloud.com/morrant/thumbs/prd0b1daa39-716b-47f8-be22-218ef0eb04b9.jpg" width="200px" height="300px" class="card-img-top" alt="shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Shoes</h5>
+                        <p class="card-text">The right cricket shoes can significantly reduce the risk of injuries.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://mysportsjersey.in/wp-content/uploads/2023/02/kids-full-sleeves-off-white.webp" width="200px" height="300px" class="card-img-top" alt="shoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Clothing</h5>
+                        <p class="card-text">Cricket clothing is made with reinforced seams for Cricket players need to be able to move freely.</p>
+                            <a href="#" class="btn float-end"><i class="fas fa-link"></i> Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5 pt-4 ps-5 pe-5 d-flex align-items-center" id="essentials">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0wTyFKDQ3GY?si=11AO0JUibhe1gqJN" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    
+
+
+   
+    <!-- Footer -->
+        <footer class="text-center" style="background-color: #5C8374; color: #092635;">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            
+            <!-- Section: Links  -->
+            <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4 fs-2">
+                    Cricket_Holic
+                    </h6>
+                    <p>
+                        Discover the best in cricket apparel at Cricket_Holic. Whether you're a seasoned player or a passionate fan, 
+                        we have everything you need to gear up in style. Join our community and elevate your cricket experience!
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Cricket Bats</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Helmets</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Keeping Gloves</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Balls</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Sales</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Blog</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset" style="text-decoration: none;">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Kochi, NY 10012, India</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Cricket_Holic.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    <!-- Footer -->
+
+</body>
+</html>
